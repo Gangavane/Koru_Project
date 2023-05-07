@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Login Page</h1>
+		<form  onsubmit="validateForm()">
+			<label for="username">Username:</label>
+			<input type="text" id="username" name="username" required>
+			<label for="password">Password:</label>
+			<input type="password" id="password" name="password" required>
+			<button id="submitButton" type="submit" value="Submit" onclick="submitForm()">Submit</button>
+		</form>
+	
+<div class="table-container">
+  <h1>User Data</h1>
+  <!-- <button id="fetchDataButton">Fetch Data</button> -->
+  <table id="userTable">
+    <thead>
+      <tr>
+        <th onclick="sortTable(0)">ID</th>
+        <th onclick="sortTable(1)">Name</th>
+        <th onclick="sortTable(2)">Email</th>
+        <th onclick="sortTable(3)">Password</th>
+        <th onclick="sortTable(4)">Action</th>
+      </tr>
+    </thead>
+    <tbody id="userTableBody">
+    </tbody>
+  </table>
+  </div>
+</div>
+	<script src="script.js"></script>
+</body>
+</html>

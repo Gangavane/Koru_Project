@@ -1,0 +1,80 @@
+* {
+	box-sizing: border-box;
+}
+
+body,tbody {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	max-width: 500px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+input[type="text"],
+input[type="password"] {
+	display: block;
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 10px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+button[type="submit"] {
+	background-color: #4CAF50;
+	color: #fff;
+	padding: 10px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+button[type="submit"]:hover {
+	background-color: #3e8e41;
+}
+
+.table-container {
+	max-width: 800px;
+	margin: 20px auto;
+}
+
+table,#userTable {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+th,
+td {
+	padding: 8px;
+	text-align: left;
+	border-bottom: 1px solid #ddd;
+}
+
+th {
+	background-color: #4CAF50;
+	color: #fff;
+}
+tr {
+  cursor: move;
+}
+/* .table-container{
+  display:none;
+} */
+
+@media screen and (max-width: 600px) {
+	input[type="text"],
+	input[type="password"],
+	button[type="submit"] {
+		width: 100%;
+	}
+  /* .table-container{
+    overflow-x: auto;
+  } */
+ .container{
+  width: 100%;
+ }
+}
